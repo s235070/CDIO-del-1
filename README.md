@@ -4,6 +4,10 @@ In this assignment, IOOuterActive, a game company, tasks developer teams with cr
 
 changes: 
 
-
+// Daniall Mudasar
 // Changes, i have added; 1. Spilleren mister alle sine point hvis spilleren slår to 1'ere.
 // Spilleren får en ekstra tur hvis spilleren slår to ens.
+
+// Abdullah Hassan
+// Jeg har tilføjet boolean, hvor spillerne kan kører ektra runder. 
+// Hvis spilleren slår 2 ens.
