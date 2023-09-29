@@ -6,7 +6,7 @@
 // Jeg har tilføjet boolean, hvor spillerne kan kører ektra runder. 
 // Hvis spilleren slår 2 ens.
 
-public class DiceGame {
+public class DiceJava {
     public static void main(String[] args) {
         var random = new java.util.Random();
 
