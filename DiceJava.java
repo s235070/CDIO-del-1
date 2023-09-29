@@ -6,10 +6,13 @@
 // Jeg har tilføjet boolean, hvor spillerne kan kører ektra runder. 
 // Hvis spilleren slår 2 ens.
 
-// New comment by Mustafa A.
+// Old comment by Mustafa A.
 // Spilleren kan vinde spillet ved at slå to 6'ere, 
 // hvis spilleren også i forrige kast slog to 6'ere, 
 // uanset om det var på ekstra kast eller i forrige tur.
+
+// Latest and final Comment by Daniel Rahimpour & Samin Chowdhury.
+// We fix some bugs and updatedet, and added the 4 rule.
 
 public class DiceJava {
     public static void main(String[] args) {
@@ -48,13 +51,14 @@ public class DiceJava {
                         } else
                             special1 = true;
                     }
+                    if (sum1 >=40){
+                        victory1=true;
+                        break;
+                    }
                     extra = true;
                 }
                 System.out.println("Sum so far: " + sum1 + "\n");
             } while (extra);
-
-            if (sum1 >= 40)
-                victory1 = true;
 
             if (victory1)
                 break;
@@ -81,15 +85,16 @@ public class DiceJava {
                         } else
                             special2 = true;
                     }
+                    if (sum2 >=40){
+                        victory2=true;
+                        break;
+                    }
                     extra = true;
                 }
                 System.out.println("Sum so far: " + sum2 + "\n");
             } while (extra);
 
-            if (sum2 >= 40)
-                victory1 = true;
-
-            if (victory1)
+            if (victory2)
                 break;
         }
 
