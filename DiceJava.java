@@ -1,3 +1,6 @@
+// Changes, i have added; 1. Spilleren mister alle sine point hvis spilleren slår to 1'ere.
+// Spilleren får en ekstra tur hvis spilleren slår to ens.
+
 public class DiceJava {
     public static void main(String[] args) {
         var random = new java.util.Random();
@@ -14,10 +17,14 @@ public class DiceJava {
             System.out.println("Die 1: " + die1);
             System.out.println("Die 2: " + die2);
 
-            if(sum1 >= 40)
+            if (sum1 >= 40)
                 break;
 
-            System.out.println("Sum so far: " + sum1 + "\n");
+            if (die1 == 1 && die2 == 1) {
+                sum1 = 0;
+                System.out.println("Snake Eyes!");
+            }
+                System.out.println("Sum so far: " + sum1 + "\n");
 
             die1 = random.nextInt(6) + 1;
             die2 = random.nextInt(6) + 1;
@@ -30,7 +37,11 @@ public class DiceJava {
             if (sum2 >= 40)
                 break;
 
-            System.out.println("Sum so far: " + sum2 + "\n");
+            if (die1 == 1 && die2 == 1) {
+                sum2 = 0;
+                System.out.println("Snake Eyes!");
+            }
+                System.out.println("Sum so far: " + sum2 + "\n");
         }
 
         if (sum1 == 40)
