@@ -11,8 +11,10 @@
 // hvis spilleren også i forrige kast slog to 6'ere, 
 // uanset om det var på ekstra kast eller i forrige tur.
 
-// Latest and final Comment by Daniel Rahimpour & Samin Chowdhury.
+// Old comment by Daniel Rahimpour & Samin Chowdhury.
 // We fix some bugs and updatedet, and added the 4 rule.
+
+//Last comment before compilation by Andrei E and Daniall M
 
 public class DiceJava {
     public static void main(String[] args) {
